@@ -2,7 +2,7 @@
 
 ## Objetivos
 * Introdução a tratamento de erros de chamadas de sistema Unix
-* Introdução ao ~workflow~ do Github Classroom
+* Introdução ao *workflow* do Github Classroom
 * Chamadas de sistema para acessar e modificar metadados de arquivos
 * Especialmente: propriedade, grupos e permissões 
 
@@ -13,6 +13,7 @@ LEROY, X.; RÉMY, D. *Unix system programming in Ocaml*. 2014. Capítulo 2.
 
 ## Passo 1.1 
 Consulte
+
 `man 2 intro`
 
 `man perror`
@@ -24,5 +25,5 @@ Busque observar:
 * Por que não precisamos saber o número de erro?
 
 ## Passo 1.2 
-Modifique o programa unlink_delete_me.c para incluir tratamento de erros, mostrando uma mensagem de erro. Obviamente, use a mensagem de erro existente no sistema.
+Modifique o programa `unlink_delete_me.c` para incluir tratamento de erros, mostrando uma mensagem de erro. Obviamente, use a mensagem de erro existente no sistema.
 
