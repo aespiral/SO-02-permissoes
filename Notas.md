@@ -58,13 +58,7 @@ Explore manuais associados, tais como `man 1 chmod` e `man sticky`
 
 Modifique as permissões de unlink_delete_me.c. Por exemplo, retire a permissão de escrita do proprietário.
 
-## Passo 2.2
-
-Realize operações equivalentes de leitura e escrita, mas, desta vez, programaticamente, através das chamadas de sistema `stat` e `chmod`.
-
-Observe que `chmod` é o nome tanto de um comando quanto de uma chamada de sistema, portanto, há o `man 1 chmod` e o `man 2 chmod`.
-
-## Passo 2.3 (Opcional)
+## Passo 2.2 (Opcional)
 
 Através de comandos, crie os grupos `bell` e `berkeley`. Depois, crie os usuários `ken` e `dennis` no grupo `bell` e `bill` no `berkeley`.
 
@@ -72,7 +66,21 @@ Logue como o usuário ken, crie uma hierarquia de diretórios, modifique permiss
 
 Tente observar os efeitos dos bits especiais (aqueles que são possíveis de observar, como o *sticky bit* em diretórios.
 
-## Passo 2.4
+## Passo 2.3
+
+Realize operações equivalentes de leitura e escrita, mas, desta vez, programaticamente, através das chamadas de sistema `stat` e `chmod`.
+
+Observe que `chmod` é o nome tanto de um comando quanto de uma chamada de sistema, portanto, há o `man 1 chmod` e o `man 2 chmod`.
+
+Mais especificamente, comece com o programa `leitura`, que imprime a mensagem "O arquivo 'delete.me' está com a permissão de escrita para o dono" quando isso é verdade ou uma mensagem com a negação, caso contrário.
+
+Depois faça o programa `escrita`, que inverte o status da permissão de escrita do do dono do arquivo `delete.me`.
+
+## Passo 2.4 (Opcional)
+
+Faça um programa que apresenta todas as permissões de um arquivo ou diretório segundo a convenção do comando `ls`. Adicionalmente, informe também se é um arquivo ou se é um diretório.
+
+## Passo 2.5
 
 Procure saber sobre as chamadas de sistema `umask` e `access`.
 
