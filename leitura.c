@@ -6,7 +6,6 @@ int main(){
 	char* f = "delete.me";
 
 	stat(f, &s);
-	//printf("%d", s.st_mode);
 	if (s.st_mode & S_IWUSR)
 		puts("O arquivo delete.me está com permissão de escrita para o dono");
 	else
